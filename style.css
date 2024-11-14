@@ -1,0 +1,17 @@
+h1 {
+    background-color:darkslategray;
+    width: 340px;
+}
+main button {
+    background-color:aqua ;
+    border-color: aqua;
+}
+main button, h1 {
+    color: white;
+}
+footer {
+    background-color:darkslategray;
+}
+p, a {
+    color: gray;
+}
