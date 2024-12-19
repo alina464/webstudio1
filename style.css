@@ -1,17 +1,101 @@
+:root  {
+    --blue: rgba(33, 150, 243, 1);
+    --black:rgba(33, 33, 33, 1);
+    --gray:rgba(117, 117, 117, 1);
+}
+
+.header-logo-text {
+    color: var(--blue);
+}
+
+.header-logo-text-second {
+    color: var(--black);
+}
+
+.header-logo {
+    list-style: none;
+    display: flex;
+    font-family: Raleway;
+    font-weight: bold;
+}
+.header-nav, .header-contact {
+    list-style: none;
+    display: flex;
+}
+.header-nav-link, .header-contact-link-second, .header-contact-link {
+    font-family: Roboto;
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+}
 h1 {
-    background-color:darkslategray;
-    width: 340px;
+    font-family: Roboto;
+    font-size: 44;
+    list-style: none;
+    color:var(--black)
 }
-main button {
-    background-color:aqua ;
-    border-color: aqua;
+button {
+    font-family: Roboto;
+    font-weight: bold;
+    background-color: var(--blue);
 }
-main button, h1 {
-    color: white;
+body 
+{
+    font-family: Roboto;
 }
-footer {
-    background-color:darkslategray;
+.main-services-list {
+    display: flex;
+    list-style:none;
 }
-p, a {
-    color: gray;
+.main-services-description
+{
+    color: var(--gray);
+    letter-spacing: 3%;
+}
+.main-services-title, h2 {
+    color: var(--black);
+    font-family:Roboto;
+    font-weight: bold;
+    letter-spacing: 3%;
+}
+.team-name
+{
+    color: var(--black);
+    font-family:Roboto;
+    font-size: 16;
+    letter-spacing: 3%;
+    font-weight: 500;
+}
+.team-role {
+    color: var(--gray);
+    font-weight: normal;
+    font-family: Roboto;
+    font-size: 16;
+}
+.footer-logo-text {
+    color: var(--blue);
+}
+
+.footer-logo-text-second {
+    color: var(--black);
+}
+
+.footer-logo {
+    list-style: none;
+    display: flex;
+    font-family: Raleway;
+    font-weight: bold;
+}
+.footer-info-text {
+    font-weight: normal;
+    font-family: Roboto;
+}
+.footer-info {
+    list-style: none;
+}
+.footer-info-link {
+    font-family: Roboto;
+    text-decoration: none;
+    color: var(--gray);
+    font-weight: normal;
 }
