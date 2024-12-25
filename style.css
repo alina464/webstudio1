@@ -130,3 +130,6 @@ body {
 .portfolio-list {
     list-style: none;
 }
+.main-gallery-list, .team-list {
+    list-style: none;
+}
