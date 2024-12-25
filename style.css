@@ -34,7 +34,7 @@ h1 {
     list-style: none;
     color:var(--black)
 }
-button {
+.main-banner-button {
     font-family: Roboto;
     font-weight: bold;
     background-color: var(--blue);
@@ -98,4 +98,35 @@ body
     text-decoration: none;
     color: var(--gray);
     font-weight: normal;
+}
+body {
+    font-family: Roboto;
+}
+.main-nav {
+    list-style: none;
+    display: flex;
+}
+.main-nav-button {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1,625;
+    letter-spacing: 3%;
+    margin: 4px;
+    font-family: Roboto
+}
+.portfolio-item-type {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 1,875;
+    letter-spacing: 3%;
+    color: var(--gray);
+}
+.portfolio-name {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 6%;
+}
+.portfolio-list {
+    list-style: none;
 }
