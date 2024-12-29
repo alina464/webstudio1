@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="./reset.css" />
     <link rel="stylesheet" href="./Normalize.css" />
     <link rel="stylesheet" href="./style.css" />
     <link href="https://fonts.googleapis.com/css2?family=Bilbo+Swash+Caps&family=Kaushan+Script&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&family=Parkinsans:wght@300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
@@ -11,29 +12,38 @@
 </head>
 <body>
     <header>
-        <div class="container">
-            <ul class="header-list">
-                <li class="header-logo">
-                    <span class="header-logo-text">Web</span>
-                    <span class="header-logo-text-second">Studio</span>
-                </li>
-                <li class="header-nav">
-                    <a class="header-nav-link" href="#">Студія</a>
-                    <a class="header-nav-link" href="/Portfolio.html" target="_blank">Портфоліо</a>
-                    <a class="header-nav-link" href="#">Контакти</a>
-                </li>
-                <li class="header-contact">
-                    <a class="header-contact-link" href="#">info@devstudio.com</a>
-                    <a class="header-contact-link" href="#">+38 096 111 11 11</a>
-                </li>
-            </ul>
+        <div class="container header">
+            <a class="header-logo-text"><span class="web">Web</span>Studio</a>
+            <div class="nav-site">
+                <ul class="header-list">
+                    <li class="header-nav">
+                        <a class="header-nav-link" href="#">Студія</a>
+                    </li>
+                    <li>
+                        <a class="header-nav-link" href="/Portfolio.html" target="_blank">Портфоліо</a>
+                    </li>
+                    <li>
+                        <a class="header-nav-link" href="#">Контакти</a>
+                    </li>
+                </ul>
+                <ul class="header-list-2">
+                    <li class="header-contact">
+                        <a class="header-contact-link" href="#">info@devstudio.com</a>
+                    </li>
+                    <li>
+                        <a class="header-contact-link" href="#">+38 096 111 11 11</a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </header>
     <main>
         <section class="main-banner">
             <div class="container">
-                <h1 class="main-banner-title">ЕФЕКТИВНІ РІШЕННЯ ДЛЯ ВАШОГО БІЗНЕСУ</h1>
-                <button class="main-banner-button">Замовити послугу</button>
+                <div class="banner">
+                    <h1 class="main-banner-title">ЕФЕКТИВНІ РІШЕННЯ ДЛЯ ВАШОГО БІЗНЕСУ</h1>
+                    <button class="main-banner-button">Замовити послугу</button>
+                </div>
             </div>
         </section>
         <div class="container"> 
@@ -94,18 +104,17 @@
                 </div>
             </section>
         </main>
-        <footer class="footer">
-            <div class="container">
-                <ul class="footer-logo">
-                    <li><p class="footer-logo-text">Web</p></li>
-                    <li><p class="footer-logo-text-second">Studio</p></li>
-                </ul>
-                <ul class="footer-info">
-                    <li class="footer-info-item"><p class="footer-info-text">м. Київ, пр-т Лесі Українки, 26</p></li>
-                    <li class="footer-info-item"><a class="footer-info-link" href="#">info@devstudio.com</a></li>
-                    <li class="footer-info-item"><a class="footer-info-link" href="#">+38 096 111 11 11</a></li>
-                </ul>
-            </div>
+        <footer>
+            <section class="footer">
+                <div class="container">
+                    <a class="footer-logo-text"><span class="web">Web</span><span class="studio">Studio</span></a>
+                    <ul class="footer-info">
+                        <li class="footer-info-item"><p class="footer-info-text">м. Київ, пр-т Лесі Українки, 26</p></li>
+                        <li class="footer-info-item"><a class="footer-info-link" href="#">info@devstudio.com</a></li>
+                        <li class="footer-info-item"><a class="footer-info-link" href="#">+38 096 111 11 11</a></li>
+                    </ul>
+                </div>
+            </section>
         </footer>
     </div>
 </body>

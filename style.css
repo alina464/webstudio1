@@ -6,18 +6,31 @@
     --light-gray:rgba(245, 244, 250, 1);
     --light-black:rgba(238, 238, 238, 1); 
     --border-color:rgba(236, 236, 236, 1);
+    --dark-blue:rgba(47, 48, 58, 1);
+    
 }
-
-.header-logo-text {
+.web {
     color: var(--blue);
     font-size: 26px;
-}
+    font-family: Raleway;
+    font-weight: bold;
+    padding-top: 60px;
 
-.header-logo-text-second {
+}
+.studio {
+    color: var(--white);
+    font-size: 26px;
+    font-family: Raleway;
+    font-weight: bold;
+    padding-top: 60px;
+}
+.header-logo-text {
     color: var(--black);
     font-size: 26px;
+    font-family: Raleway;
+    font-weight: bold;
+    padding: 24px 0px 25px 0px;
 }
-
 .header-logo {
     list-style: none;
     display: flex;
@@ -34,25 +47,41 @@
     color: black;
     font-weight: 500;
 }
-.header-list {
+.nav-site {
     display: flex;
-    justify-content: space-between; 
-    align-items: center; 
-    padding: 32px 0px 32px 0px; 
+    gap: 200px;
+}
+.header {
+    display: flex;
+}
+header {
+    border-bottom: 1px solid #ccc;
+}
+.header-list, .header-list-2 {
     margin: 0;
-    
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 50px;
+}
+.header-nav-link:hover {
+    color: var(--blue);
+}
+.header-contact-link:hover {
+    color: var(--blue);
+}
+.header-list {
+    padding-left: 93px;
 }
 h1 {
-    font-family: Roboto;
     font-size: 44px;
-    list-style: none;
     color:var(--white);
-    width: 50%;
     text-align: center;
     margin: 0px;
+    letter-spacing: 6%;
+    line-height: 60px;
 }
 .main-banner-button {
-    font-family: Roboto;
     font-weight: bold;
     background-color: var(--blue);
     width: 216px;
@@ -60,6 +89,18 @@ h1 {
     border: var(--blue);
     border-radius: 5px 5px 5px 5px;
     margin-top: 30px;
+    align-items: center;
+    color: var(--white);
+}
+.main-banner {
+    background-color: var(--dark-blue);
+}
+.banner {
+    padding: 200px 237px 200px 237px ;
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center;
 }
 body 
 {
@@ -68,19 +109,40 @@ body
 .main-services-list {
     display: flex;
     list-style:none;
-    padding-top: 93px;
+    padding-top: 94px;
     padding-bottom: 94px;
+    margin: 0px;
+    padding-left: 0px;
+    gap: 30px;
 }
 .main-services-description
 {
     color: var(--gray);
     letter-spacing: 3%;
+    line-height: 24px;
+    font-size: 14px;
 }
-.main-services-title, h2 {
+.main-services-title {
     color: var(--black);
     font-family:Roboto;
     font-weight: bold;
     letter-spacing: 3%;
+    padding-bottom: 10px;
+    font-size: 14px;
+}
+.main-gallery-title {
+    font-family: Roboto;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 42.19px;
+    letter-spacing: 0.03em;
+    text-align: center;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+}
+.team-item {
+    background-color: var(--white);
+    text-align: center;
 }
 .team-name
 {
@@ -89,51 +151,44 @@ body
     font-size: 16px;
     letter-spacing: 3%;
     font-weight: 500;
+    padding-top: 30px;
 }
 .team-role {
     color: var(--gray);
     font-weight: normal;
     font-family: Roboto;
     font-size: 16px;
+    padding-bottom: 30px;
+    padding-top: 10px;
 }
-.footer-logo-text {
-    color: var(--blue);
-    font-size: 26px;
-}
-
-.footer-logo-text-second {
-    color: var(--white);
-    font-size: 26px;
-}
-
-.footer-logo {
-    list-style: none;
-    display: flex;
-    font-family: Raleway;
-    font-weight: bold;
-    padding-top: 60px;
-    padding-bottom: 0px;
+.footer {
+    background-color: var(--dark-blue);
+    padding: 60px 0px;
 }
 .footer-info-text {
     font-weight: normal;
     font-family: Roboto;
     color: var(--white);
 }
+.footer-info-item {
+    margin-bottom: 9px;
+  }
+.footer-info-item:last-child {
+    margin-bottom: 0; 
+  }
 .footer-info {
     list-style: none;
     margin-top: 20px;
-    padding-bottom: 60px;
     font-size: 14px;
     line-height: 24px;
+    padding-left: 0px;
+    margin-bottom: 0px;
 }
 .footer-info-link {
     font-family: Roboto;
     text-decoration: none;
     color: var(--gray);
     font-weight: normal;
-}
-body {
-    font-family: Roboto;
 }
 .main-portfolio {
     margin-top: 96px;
@@ -147,15 +202,19 @@ body {
 .main-nav-button {
     font-weight: 500;
     font-size: 16px;
-    line-height: 1,625;
+    line-height: 26px;
     letter-spacing: 3%;
     margin-right: 8px;
     font-family: Roboto;
-    width: 114px;
-    height: 38px;
+    padding: 6px 22px 6px 22px;
     border-radius: 5px 5px 5px 5px;
-    background-color: var(--light-black);
-    border-color: var(--light-black);
+    background-color: var(--light-gray);
+    border: none; 
+    outline: none;
+}
+.main-nav-button:hover {
+    color: var(--white);
+    background-color: var(--blue);
 }
 .portfolio-item-type {
     font-weight: normal;
@@ -163,52 +222,53 @@ body {
     line-height: 1,875;
     letter-spacing: 3%;
     color: var(--gray);
+    padding: 4px 24px 0px 24px;
 }
 .portfolio-name {
     font-weight: bold;
     font-size: 18px;
-    line-height: 2;
+    line-height: 36px;
     letter-spacing: 6%;
+    padding: 20px 24px 0px 24px;
 }
 .portfolio-list {
     list-style: none;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-    margin-top: 32px;
+    gap: 30px;
+    margin-top: 34px;
     margin-bottom: 92px;
 }
 .portfolio-item {
     padding-bottom: 20px;
+    border: 1px solid var(--light-gray);
 }
 .main-gallery-list, .team-list {
     list-style: none;
     padding-top: 50px;
-    padding-bottom: 124px;
+    padding-bottom: 94px;
     display: flex;
     margin: 0px;
-    justify-content: space-between;
+    gap: 30px;
+    padding-left: 0px;
 }
 .container {
     width:1170px;
     margin:0 auto;
     padding:0 15px;
 }
-.main-banner {
-    background-color: var(--black);
-    padding: 200px 237px 200px 237px ;
-    align-items: center;
-}
 .team-title {
     padding-top: 94px;
     text-align: center;
+    margin: 0px;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 42.19px;
+    letter-spacing: 0.03em;
 }
 .main-gallery-title {
     text-align: center;
 }
 .team {
     background-color: var(--light-gray);
-}
-.footer {
-    background-color: var(--black);
 }
