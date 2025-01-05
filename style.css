@@ -41,7 +41,13 @@
     list-style: none;
     display: flex;
 }
-.header-nav-link, .header-contact-link {
+.header-contact-link {
+    color: var(--gray);
+    font-family: Roboto;
+    text-decoration: none;
+    font-weight: 500;
+}
+.header-nav-link {
     font-family: Roboto;
     text-decoration: none;
     color: black;
@@ -242,6 +248,7 @@ body
 .portfolio-item {
     padding-bottom: 20px;
     border: 1px solid var(--light-gray);
+    flex-basis: calc((100% - 90px) / 3);
 }
 .main-gallery-list, .team-list {
     list-style: none;
@@ -253,7 +260,7 @@ body
     padding-left: 0px;
 }
 .container {
-    width:1170px;
+    width:1206px;
     margin:0 auto;
     padding:0 15px;
 }
