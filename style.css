@@ -331,7 +331,93 @@ body
     box-shadow: 0.3px 2px 2.5px -1.2px rgba(117, 117, 117, 1),
     -0.3px 2px 2.5px -1.2px rgba(117, 117, 117, 1);
 }
-
 .portfolio-item:hover {
     box-shadow: 1px 4px 6px -2px rgba(117, 117, 117, 1);
 }
+
+/* .team-list-icon:hover {
+    fill: white
+    stroke: var(--blue);
+} */
+/* .team-list-icon {
+    fill: #2a2a2a;
+
+} */
+   
+
+.team-icon-div:hover {
+    background-color: var(--blue);
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+}
+.team-list-icon {
+    fill: black;
+}
+.main-gallery-box1 {
+    background-color: rgba(47, 48, 58, 0.8);
+    width: 370px;
+    height: 70px;
+    font-family: Roboto;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 100%;
+    letter-spacing: 3%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    color: var(--white);
+    opacity: 0.93;
+    position: absolute;
+    top: 210px;
+    z-index: 2;
+}
+.main-gallery-item {
+    width: 370px;
+    position: relative;
+    z-index: 1;
+}
+.main-gallery-box2 {
+    background-color: rgba(47, 48, 58, 0.8);
+    width: 370px;
+    height: 70px;
+    font-family: Roboto;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 100%;
+    letter-spacing: 3%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    color: var(--white);
+    opacity: 0.93;
+    position: absolute;
+    top: 210px;
+    z-index: 2;
+}
+.main-gallery-box3 {
+    background-color: rgba(47, 48, 58, 0.8);
+    width: 370px;
+    height: 70px;
+    font-family: Roboto;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 100%;
+    letter-spacing: 3%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    color: var(--white);
+    opacity: 0.93;
+    position: absolute;
+    top: 210px;
+    z-index: 2;
+}
+
+
