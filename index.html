@@ -48,7 +48,41 @@
             <div class="container">
                 <div class="banner">
                     <h1 class="main-banner-title">ЕФЕКТИВНІ РІШЕННЯ ДЛЯ ВАШОГО БІЗНЕСУ</h1>
-                    <button class="main-banner-button">Замовити послугу</button>
+
+                    <button class="btn-open" data-modal-open>Замовити послугу</button>
+                    <div class="backdrop is-hidden" data-modal>
+                        <div class="modal">
+                            <div class="modal-section">
+                                <button class="btn-close" data-modal-close>x</button>
+                                <h3 class="modal-title">Залиште свої дані, ми вам передзвонимо</h3>
+                                <p class="modal-form-must">Ім'я</p>
+                                <svg class="form-person" height="12px" width="12px">
+                                    <use href="./symboldefts.svg#form-person"></use>
+                                </svg>
+                                <input type="text" class="modal-form">
+                                <p class="modal-form-must">Телефон</p>
+                                <svg class="form-phone" height="13px" width="13px">
+                                    <use href="./symboldefts.svg#form-phone"></use>
+                                </svg>
+                                <input type="text" class="modal-form">
+                                <p class="modal-form-must">Пошта</p>
+                                <svg class="form-mail" height="12px" width="15px">
+                                    <use href="./symboldefts.svg#form-mail"></use>
+                                </svg>
+                                <input type="email" class="modal-form">
+                                <p class="modal-form-must">Коментар</p>
+                                <input type="text" class="modal-comment" placeholder="Введіть текст">
+                                <div class="modal-form-end">
+                                    <input type="checkbox" class="modal-form-end-input">
+                                    <p class="modal-form-end-text">Погоджуюся з розсилкою та приймаю<span class="modal-form-end-link">Умови договору</span></p>
+                                </div>
+                                <div class="end-button">
+                                    <button class="modal-form-end-button">Відправити</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </section>
@@ -280,9 +314,20 @@
                             </div>
                         </div>
                     </div>
+                    <div>
+                        <p class="footer-form-text">Підпишіться на розсилку</p>
+                        <div>
+                            <input type="email" placeholder="E-mail" class="footer-form-input">
+                            <button class="footer-form-button">Підписатися</button>
+                            <svg class="footer-form-icon" height="24px" width="24px">
+                                <use href="./symboldefts.svg#telegram"></use>
+                            </svg>
+                        </div>
+                    </div>
                 </div>
             </section>
         </footer>
     </div>
+    <script src="./js/modal.js"></script>
 </body>
 </html>
