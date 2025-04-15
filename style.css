@@ -20,20 +20,36 @@
     visibility: visible;
 
 }
+.backdrop .modal.show {
+    opacity: 1;
+    transform: translate(-50%, -50%);
+}
 .backdrop.is-hidden {
     visibility: hidden;
     opacity: 0;
+    pointer-events: none;
+}
+.is-hidden {
     pointer-events: none;
 }
 .modal {
     background-color: var(--white);
     left: 50%;
     top: 50%;
-    transform: translate(-50%,-50%);
     position: absolute;
     box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.5);
     border-radius: 5px ;
+    transform: translate(-50%, 100%);
+    transition: all ease-in-out 1s;
 }
+.backdrop:not(.is-hidden) .modal {
+    transform: translate(-50%, -50%);
+    opacity: 1;
+}
+/* .modal.show {
+    transform: translate(-50%, -50%);
+    opacity: 1;
+} */
 .modal-section {
     width: 528px;
     height: 551px;
@@ -707,7 +723,82 @@ body
 }
 .footer-form-icon {
     position: absolute;
-    top: 2810px;
-    left: 1250px;
+    top: 14px;
+    left: 510px;
 }
-
+.first:hover::after {
+    background-image: url(./img/hover-header.svg);
+    content: '';
+    width: 48px;
+    height: 4px;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 76px;
+}
+.second:hover::after {
+    background-image: url(./img/hover-second-header.svg);
+    content: '';
+    width: 78px;
+    height: 4px;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 76px;
+}
+.third:hover::after {
+    background-image: url(./img/hover-second-header.svg);
+    content: '';
+    width: 78px;
+    height: 4px;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    position: absolute;
+    top: 76px;
+    left: 318px;
+}
+.header-list {
+    position: relative;
+}
+.st::after {
+    background-image: url(./img/hover-header.svg);
+    content: '';
+    width: 48px;
+    height: 4px;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 76px;
+}
+.st {
+    color: var(--blue);
+}
+.pr {
+    color: var(--blue);
+}
+.pr::after {
+    background-image: url(./img/hover-second-header.svg);
+    content: '';
+    width: 78px;
+    height: 4px;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 76px;
+}
+.footer-div-icon {
+    position: relative;
+}
